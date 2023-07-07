@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>main_menu module &mdash; Python  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ranking module" href="ranking.html" />
+    <link rel="prev" title="main module" href="main.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">main_menu module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#main_menu.MainMenu"><code class="docutils literal notranslate"><span class="pre">MainMenu</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#main_menu.MainMenu.display_mode"><code class="docutils literal notranslate"><span class="pre">MainMenu.display_mode()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main_menu.MainMenu.is_continue_game"><code class="docutils literal notranslate"><span class="pre">MainMenu.is_continue_game()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main_menu.MainMenu.select_game_mode"><code class="docutils literal notranslate"><span class="pre">MainMenu.select_game_mode()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main_menu.MainMenu.start_count_down"><code class="docutils literal notranslate"><span class="pre">MainMenu.start_count_down()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#main_menu.MainMenu.start_game"><code class="docutils literal notranslate"><span class="pre">MainMenu.start_game()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ranking.html">ranking module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ranking_list.html">ranking_list module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ranking_menu.html">ranking_menu module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="game_mode.html">game_mode module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="util/standard_input_reader.html">standard_input_reader module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="util/standard_csv_operator.html">standard_csv_operator module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">main_menu module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/typing_app/main_menu.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-main_menu">
+<span id="main-menu-module"></span><h1>main_menu module<a class="headerlink" href="#module-main_menu" title="Permalink to this heading">¶</a></h1>
+<p>The main_menu module provides the MainMenu class for managing the main menu of the typing app.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="main_menu.MainMenu">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">main_menu.</span></span><span class="sig-name descname"><span class="pre">MainMenu</span></span><a class="headerlink" href="#main_menu.MainMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>MainMenu class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="main_menu.MainMenu.display_mode">
+<span class="sig-name descname"><span class="pre">display_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#main_menu.MainMenu.display_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display game modes that can be selected.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main_menu.MainMenu.is_continue_game">
+<span class="sig-name descname"><span class="pre">is_continue_game</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#main_menu.MainMenu.is_continue_game" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prompt the user to continue or quit the typing application.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main_menu.MainMenu.select_game_mode">
+<span class="sig-name descname"><span class="pre">select_game_mode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="game_mode.html#game_mode.GameMode" title="game_mode.GameMode"><span class="pre">GameMode</span></a></span></span><a class="headerlink" href="#main_menu.MainMenu.select_game_mode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select the difficulty level of the game.</p>
+<dl class="simple">
+<dt>Yields:</dt><dd><p>GameMode: EASY, NORMAL, HARD defined in enum.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main_menu.MainMenu.start_count_down">
+<span class="sig-name descname"><span class="pre">start_count_down</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">count_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#main_menu.MainMenu.start_count_down" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays a countdown for a specified number of seconds.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>count_time (int): Number of seconds to count down.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="main_menu.MainMenu.start_game">
+<span class="sig-name descname"><span class="pre">start_game</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">game_mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="game_mode.html#game_mode.GameMode" title="game_mode.GameMode"><span class="pre">GameMode</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#main_menu.MainMenu.start_game" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start the game.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>game_mode (GameMode): Selected game difficulty level.</p>
+</dd>
+<dt>Yields:</dt><dd><p>int: Elapsed time at the end of the game. [milliseconds]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="main.html" class="btn btn-neutral float-left" title="main module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ranking.html" class="btn btn-neutral float-right" title="ranking module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

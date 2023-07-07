@@ -1,3 +1,6 @@
+"""
+The standard_csv_opetrator module provides the StandardCsvOperator class for managing rankings in the typing app.
+"""
 import sys
 import os
 import csv
@@ -6,6 +9,9 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from game_mode import GameMode
 
 class StandardCsvOperator:
+    """
+    StandardCsvOperator class
+    """
     @staticmethod
     def convert_question_csv_to_list(csv_file_name: str) -> list[str]:
         """Convert the question CSV to list data.

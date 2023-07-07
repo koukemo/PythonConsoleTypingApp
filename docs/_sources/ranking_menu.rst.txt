@@ -1,0 +1,7 @@
+Main Module
+===========
+
+.. automodule:: typing_app.ranking_menu
+   :members:
+   :undoc-members:
+   :show-inheritance:

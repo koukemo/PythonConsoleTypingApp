@@ -3,6 +3,8 @@ from ranking_menu import RankingMenu
 from ranking import Ranking
 
 def main():
+    """main function
+    """
     main_menu = MainMenu()
     ranking_menu = RankingMenu()
 

@@ -1,7 +1,13 @@
+"""
+The ranking_menu module provides the RankingMenu class for managing rankings in the typing app.
+"""
 from ranking_list import RankingList
 from ranking import Ranking
 
 class RankingMenu:
+    """
+    RankingMenu class
+    """
     def __init__(self):
         """Initialization of RankingMenu class.
 

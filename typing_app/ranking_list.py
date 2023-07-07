@@ -1,8 +1,15 @@
+"""
+The ranking_list module provides the RankingList class for managing rankings in the typing app.
+"""
 from game_mode import GameMode
 from ranking import Ranking
 from util.standard_csv_operator import StandardCsvOperator
 
 class RankingList:
+    """
+    The RankingMenu class provides functionality for managing rankings.
+    It allows registering, displaying, and creating ranking data lists.
+    """
     def __init__(self):
         """Initialization of RankingList class.
 

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>standard_csv_operator module &mdash; Python  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="standard_input_reader module" href="standard_input_reader.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../main.html">main module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../main_menu.html">main_menu module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ranking.html">ranking module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ranking_list.html">ranking_list module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ranking_menu.html">ranking_menu module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../game_mode.html">game_mode module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="standard_input_reader.html">standard_input_reader module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">standard_csv_operator module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#standard_csv_operator.StandardCsvOperator"><code class="docutils literal notranslate"><span class="pre">StandardCsvOperator</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#standard_csv_operator.StandardCsvOperator.convert_question_csv_to_list"><code class="docutils literal notranslate"><span class="pre">StandardCsvOperator.convert_question_csv_to_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#standard_csv_operator.StandardCsvOperator.convert_ranking_csv_to_list"><code class="docutils literal notranslate"><span class="pre">StandardCsvOperator.convert_ranking_csv_to_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#standard_csv_operator.StandardCsvOperator.convert_ranking_list_to_csv"><code class="docutils literal notranslate"><span class="pre">StandardCsvOperator.convert_ranking_list_to_csv()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">standard_csv_operator module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/typing_app/util/standard_csv_operator.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-standard_csv_operator">
+<span id="standard-csv-operator-module"></span><h1>standard_csv_operator module<a class="headerlink" href="#module-standard_csv_operator" title="Permalink to this heading">¶</a></h1>
+<p>The standard_csv_opetrator module provides the StandardCsvOperator class for managing rankings in the typing app.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="standard_csv_operator.StandardCsvOperator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">standard_csv_operator.</span></span><span class="sig-name descname"><span class="pre">StandardCsvOperator</span></span><a class="headerlink" href="#standard_csv_operator.StandardCsvOperator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>StandardCsvOperator class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="standard_csv_operator.StandardCsvOperator.convert_question_csv_to_list">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">convert_question_csv_to_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">csv_file_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#standard_csv_operator.StandardCsvOperator.convert_question_csv_to_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the question CSV to list data.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>csv_file_name (str): CSV file with question data.</p>
+</dd>
+<dt>Yeilds:</dt><dd><p>list[str]: Converted question list data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="standard_csv_operator.StandardCsvOperator.convert_ranking_csv_to_list">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">convert_ranking_csv_to_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">csv_file_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../game_mode.html#game_mode.GameMode" title="game_mode.GameMode"><span class="pre">game_mode.GameMode</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#standard_csv_operator.StandardCsvOperator.convert_ranking_csv_to_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the ranking CSV to list data.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>csv_file_name (str): CSV file with ranking data.</p>
+</dd>
+<dt>Yeilds:</dt><dd><p>tuple[list[int], list[GameMode], list[int]]: A tuple of time list data, game mode list data, and score list data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="standard_csv_operator.StandardCsvOperator.convert_ranking_list_to_csv">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">convert_ranking_list_to_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">game_mode_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../game_mode.html#game_mode.GameMode" title="game_mode.GameMode"><span class="pre">game_mode.GameMode</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">score_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csv_file_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#standard_csv_operator.StandardCsvOperator.convert_ranking_list_to_csv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the ranking list to CSV data.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>time_list (list[int]): List of times to be registered in CSV.
+game_mode_list (list[GameMode]): List of game modes to be registered in CSV.
+score_list (list[int]): List of scores to be registered in CSV.</p>
+</dd>
+<dt>Yeilds:</dt><dd><p>bool: True -&gt; CSV could be created., False -&gt; Could not create CSV.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="standard_input_reader.html" class="btn btn-neutral float-left" title="standard_input_reader module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

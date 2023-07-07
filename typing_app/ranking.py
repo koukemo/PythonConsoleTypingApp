@@ -1,6 +1,12 @@
 from game_mode import GameMode
 
+"""
+The ranking module provides the Ranking class for managing rankings in the typing app.
+"""
 class Ranking:
+    """
+    Ranking class
+    """
     def __init__(self, time: int, game_mode: GameMode):
         """Initialization of Ranking class.
         
