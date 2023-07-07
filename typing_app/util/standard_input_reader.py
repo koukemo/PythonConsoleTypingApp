@@ -1,4 +1,10 @@
-class StandardInputreader:
+"""
+The standard_input_reader module provides the StandardInputReader class for managing rankings in the typing app.
+"""
+class StandardInputReader:
+    """
+    StandardInputReader class
+    """
     @staticmethod
     def input_int(message: str = "> ") -> int:
         """Receives standard input of numerical values.

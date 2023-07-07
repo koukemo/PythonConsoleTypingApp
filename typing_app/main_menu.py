@@ -1,10 +1,16 @@
+"""
+The main_menu module provides the MainMenu class for managing the main menu of the typing app.
+"""
 from game_mode import GameMode
-from util.standard_input_reader import StandardInputreader
+from util.standard_input_reader import StandardInputReader
 from util.standard_csv_operator import StandardCsvOperator
 import time
 import random
 
 class MainMenu:
+    """
+    MainMenu class
+    """
     def display_mode(self) -> None:
         """Display game modes that can be selected.
         """
@@ -19,7 +25,7 @@ class MainMenu:
         Yields:
             GameMode: EASY, NORMAL, HARD defined in enum.
         """
-        input_num = StandardInputreader.input_int()
+        input_num = StandardInputReader.input_int()
 
         if input_num == 1:
             return GameMode.EASY
@@ -95,9 +101,11 @@ class MainMenu:
         return result_time
 
     def is_continue_game(self) -> None:
+        """Prompt the user to continue or quit the typing application.
+        """
         print("Continue? (1: Yes / 2: No)")
 
-        select_number = StandardInputreader.input_int()
+        select_number = StandardInputReader.input_int()
 
         if select_number == 1:
             return
