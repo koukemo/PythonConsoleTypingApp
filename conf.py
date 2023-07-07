@@ -6,6 +6,7 @@ sys.path.insert(0, os.path.abspath('./typing_app/util'))
 
 extensions = [
     'sphinx.ext.autodoc',
+    'sphinx.ext.githubpages',
 ]
 
 autodoc_mock_imports = [
