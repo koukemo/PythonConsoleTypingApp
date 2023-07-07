@@ -1,2 +1,4 @@
 typing_app/__pycache__
 typing_app/util/__pycache__
+
+.DS_Store
