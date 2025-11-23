@@ -86,7 +86,7 @@ class MainMenu:
 
         for question in random.sample(question_list, question_count):
             while True:
-                answer = StandardInputreader.input_string(f"{question}: ")
+                answer = StandardInputReader.input_string(f"{question}: ")
 
                 if question == answer:
                     print("OK!")
